@@ -16,77 +16,156 @@
       font-weight: bold;
       color: #ADFF2F;
       text-shadow: 0 0 5px #ADFF2F,
-                   0 0 10px #ADFF2F,
-                   0 0 20px #ADFF2F,
-                   0 0 40px #ADFF2F;
+        0 0 10px #ADFF2F,
+        0 0 20px #ADFF2F,
+        0 0 40px #ADFF2F;
     }
+
     * {
       margin: 0;
       padding: 0;
     }
 
     body {
-      background-color:  #0D0D0D ;color: #F5F5F5;
-      font-family: 'Robot Mono',monospace;
+      background-color: #0D0D0D;
+      color: #F5F5F5;
+      font-family: 'Robot Mono', monospace;
       font-size: large;
     }
-    nav{
-      display:flex ;
+
+    nav {
+      display: flex;
       justify-content: space-around;
       align-items: center;
-      height:120px;
-      background-color: #0D0D0D ;
+      height: 120px;
+      background-color: #0D0D0D;
     }
-    nav ul{
-      display:flex;
+
+    nav ul {
+      display: flex;
       justify-content: center;
     }
-    nav ul li{
+
+    nav ul li {
       list-style: none;
-      margin:0px 23px;
+      margin: 0px 23px;
       color: #F5F5F5;
     }
 
- ul li:hover {
-      color: #ADFF2F
-; /* neon yellow-green */
-      text-shadow: 0 0 5px #ADFF2F
-,
-                   0 0 10px #ADFF2F
-,
-                   0 0 20px #ADFF2F
-,
-                   0 0 40px #ADFF2F
-;
+    nav ul li a {
+      text-decoration: none;
+      color: white;
     }
-    .left{
+
+    ul li:hover {
+      color: #ADFF2F;
+      /* neon yellow-green */
+      text-shadow: 0 0 5px #ADFF2F,
+        0 0 10px #ADFF2F,
+        0 0 20px #ADFF2F,
+        0 0 40px #ADFF2F;
+    }
+
+    .left {
       font-size: 20px;
     }
-    .firstsect{
-      display:flex;
+
+    .firstsect {
+      display: flex;
       justify-content: space-around;
-      margin:50px 0;
+      margin: 50px 0;
     }
-    
-    .leftsect{
-     width:70%;
-     margin:100px 50px;
-     font-size: 2rem;
-     align-items:center;
+
+    .leftsect {
+      width: 70%;
+      margin: 100px 50px;
+      font-size: 2rem;
+      align-items: center;
     }
-    .leftsect div{
+
+    .leftsect div {
       width: 80%;
     }
-    .rightsect{
-       width:40%;
+
+    .rightsect {
+      width: 40%;
+    }
+
+    .rightsect img {
+      padding-left: 50px;
+      padding-right: 300px;
+      margin-right: 800px;
+      width: 250px;
+    }
+
+    #element {
+      color: #ADFF2F;
+      /* neon yellow-green */
+      text-shadow: 0 0 5px #ADFF2F,
+        0 0 10px #ADFF2F,
+        0 0 20px #ADFF2F,
+        0 0 40px #ADFF2F;
+    }
+
+    .para {
+      font-size: 1rem;
+      padding-top: 20px;
+    }
+   
+.secondsect {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+.secondsect .leftsect a{
+  color: #ADFF2F;
+      /* neon yellow-green */
+      text-shadow: 0 0 5px #ADFF2F,
+        0 0 10px #ADFF2F,
+        0 0 20px #ADFF2F,
+        0 0 40px #ADFF2F;
+}
+.secondsect .leftsect {
+  margin:0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  font-size: 2rem;
+}
+
+.secondsect .leftsect a {
+  text-decoration: none;
+  color: white;
+}
+
+.secondsect .rightsect {
+  margin:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondsect .rightsect img {
+  width: 250px;
+  padding:0%;
+  margin-right:35%;
+}
+
+    h2 a {
+      text-decoration: none;
+      color: white;
+    }
+
+    h2 a:hover {
+      color: #ADFF2F;
+      /* neon yellow-green */
+      text-shadow: 0 0 5px #ADFF2F,
+        0 0 10px #ADFF2F,
+        0 0 20px #ADFF2F,
+        0 0 40px #ADFF2F;
     }
     
-    .rightsect img{
-    padding-left: 50px;
-    padding-right: 300px;
-      margin-right:800px;
-       width:250px;
-    }
+    
   </style>
 </head>
 
@@ -109,19 +188,40 @@
   </header>
 
   <main>
-      <section class="firstsect">
-        <div class="leftsect">
-          Hi
-          <br>
-          My name is Diksha Chaurasiya
-          <br>
-          I am an aspiring Software Engineer
-        </div>
-        <div class="rightsect">
-          <img src="f1-removebg-preview.png" alt="">
-        </div>
-      </section>
+    <section class="firstsect">
+      <div class="leftsect">
+        Hi
+        <br>
+        My name is <span id="element1">Diksha Chaurasiya</span>
+        <br>
+        I am an aspiring
+        <span id="element"></span>
+        <br>
+        <p class="para">A dedicated BTech student eager to learn, grow, and gain hands-on experience. Passionate about
+          developing new skills, working collaboratively, and contributing meaningfully. Always open to challenges and
+          committed to putting in the hard work needed to improve and make a positive impact.</p>
+      </div>
+      <div class="rightsect">
+        <img src="f1-removebg-preview.png" alt="">
+      </div>
+    </section>
+    <section class="secondsect">
+      <div class="leftsect">
+    <a href="https://github.com/Diksha0032">Github</a>
+    </div>
+    <div class="rightsect">
+    <img src="github.png" alt="Github">
+    </div>
+    </section>
+
   </main>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Software Engineer'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 
 </html>
