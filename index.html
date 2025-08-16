@@ -11,6 +11,19 @@
     href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     rel="stylesheet">
   <style>
+      a {
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      color: #ADFF2F;
+      /* neon yellow-green */
+      text-shadow: 0 0 5px #ADFF2F,
+        0 0 10px #ADFF2F,
+        0 0 20px #ADFF2F,
+        0 0 40px #ADFF2F;
+    }
     .logo {
       font-size: 30px;
       font-weight: bold;
@@ -52,33 +65,21 @@
       color: #F5F5F5;
     }
 
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-    }
-
-    ul li:hover {
-      color: #ADFF2F;
-      /* neon yellow-green */
-      text-shadow: 0 0 5px #ADFF2F,
-        0 0 10px #ADFF2F,
-        0 0 20px #ADFF2F,
-        0 0 40px #ADFF2F;
+   .firstsect,.secondsect,.thirdsect{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      margin:50px 0;
+      padding:0 50px;
     }
 
     .left {
       font-size: 20px;
     }
-
-    .firstsect {
-      display: flex;
-      justify-content: space-around;
-      margin: 50px 0;
-    }
-
+    
     .leftsect {
-      width: 70%;
-      margin: 100px 50px;
+      flex: 70%;
+      text-align: left;
       font-size: 2rem;
       align-items: center;
     }
@@ -88,17 +89,26 @@
     }
 
     .rightsect {
-      width: 40%;
+      flex:30%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .rightsect img {
-      padding-left: 50px;
-      padding-right: 300px;
-      margin-right: 800px;
+      display:block;
+      margin:0 auto;
       width: 250px;
     }
 
-    #element {
+    .secondsect .leftsect{
+      text-align: center;
+    }
+    .thirdsect .leftsect{
+      text-align: center;
+    }
+
+    #element:hover{
       color: #ADFF2F;
       /* neon yellow-green */
       text-shadow: 0 0 5px #ADFF2F,
@@ -111,60 +121,6 @@
       font-size: 1rem;
       padding-top: 20px;
     }
-   
-.secondsect {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px 0;
-}
-.secondsect .leftsect a{
-  color: #ADFF2F;
-      /* neon yellow-green */
-      text-shadow: 0 0 5px #ADFF2F,
-        0 0 10px #ADFF2F,
-        0 0 20px #ADFF2F,
-        0 0 40px #ADFF2F;
-}
-.secondsect .leftsect {
-  margin:0;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  font-size: 2rem;
-}
-
-.secondsect .leftsect a {
-  text-decoration: none;
-  color: white;
-}
-
-.secondsect .rightsect {
-  margin:0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.secondsect .rightsect img {
-  width: 250px;
-  padding:0%;
-  margin-right:35%;
-}
-
-    h2 a {
-      text-decoration: none;
-      color: white;
-    }
-
-    h2 a:hover {
-      color: #ADFF2F;
-      /* neon yellow-green */
-      text-shadow: 0 0 5px #ADFF2F,
-        0 0 10px #ADFF2F,
-        0 0 20px #ADFF2F,
-        0 0 40px #ADFF2F;
-    }
-    
     
   </style>
 </head>
@@ -213,7 +169,14 @@
     <img src="github.png" alt="Github">
     </div>
     </section>
-
+    <section class="thirdsect">
+      <div class="leftsect">
+    <a href="https://codolio.com/profile/Diksha0032">Codolio</a>
+    </div>
+    <div class="rightsect">
+    <img src="codolio.gif" alt="Codolio">
+    </div>
+    </section>
   </main>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
