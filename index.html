@@ -94,7 +94,7 @@
     .leftsect div {
       width: 80%;
     }
-  
+
     .rightsect {
       flex: 30%;
       display: flex;
@@ -110,15 +110,28 @@
 
     .projects {
       display: flex;
+      justify-content: center;
       flex-direction: row;
       gap: 150px;
+      flex-wrap: wrap;
       padding-top: 30px;
-      padding-left: 100px;
+      ;
     }
-    .projects .lowersect{
+
+    .project-1,
+    .project-2,
+    .project-3 {
+      padding: 10px;
+      width: 250px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .projects .lowersect {
       padding-top: 15px;
 
     }
+
     .projects a {
       text-align: center;
       align-items: center;
@@ -139,31 +152,35 @@
       justify-content: center;
       font-size: 25px;
     }
+
     #proj {
       text-align: center;
       font-size: 30px;
     }
-    .project-1 .uppersect img{
+
+    .project-1 .uppersect img {
       max-width: 250px;
-    max-height: 250px;
-    }
-    .project-2 .uppersect img{
-      max-width: 290px;
-    max-height: 250px;
-    }
-    .project-3 .uppersect img{
-      max-width: 250px;
-    max-height: 250px;
+      max-height: 250px;
     }
 
-    .border{
+    .project-2 .uppersect img {
+      max-width: 290px;
+      max-height: 250px;
+    }
+
+    .project-3 .uppersect img {
+      max-width: 250px;
+      max-height: 250px;
+    }
+
+    .border1:hover {
       box-sizing: border-box;
-      box-shadow:  0 0 5px #ADFF2F,
+      box-shadow: 0 0 5px #ADFF2F,
         0 0 10px #ADFF2F,
         0 0 20px #ADFF2F,
         0 0 40px #ADFF2F;
     }
-    
+
     .secondsect .leftsect {
       text-align: center;
     }
@@ -172,12 +189,13 @@
       text-align: center;
     }
 
-    .project-2 .rpstext{
+    .project-2 .rpstext {
       font-size: 20px;
     }
+
     #element:hover {
       color: #ADFF2F;
-      /* neon yellow-green */
+
       text-shadow: 0 0 5px #ADFF2F,
         0 0 10px #ADFF2F,
         0 0 20px #ADFF2F,
@@ -202,13 +220,13 @@
 
     button:hover {
       color: #ADFF2F;
-      /* neon text */
+
       text-shadow: 0 0 5px #ADFF2F,
         0 0 10px #ADFF2F,
         0 0 20px #ADFF2F,
         0 0 40px #ADFF2F;
       border-color: white;
-      /* border glows too */
+
     }
 
     .contactsect h2,
@@ -221,6 +239,57 @@
       font-size: 1.25rem;
       text-decoration: none;
       font-family: 'Robot Mono', monospace;
+    }
+
+
+    @media (max-width:600px) {
+
+      .firstsect,
+      .secondsect,
+      .thirdsect,
+      .projects {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+
+      .leftsect,
+      .rightsect {
+        flex: 100%;
+        margin-bottom: 15px;
+      }
+
+      .rightsect img {
+        width: 150px;
+      }
+
+      .project-1,
+      .project-2,
+      .project-3 {
+        width: 100%;
+      }
+
+      nav {
+        flex-direction: column;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .para {
+        font-size: 0.9rem;
+      }
+
+      .contactsect,
+      .contactsect input,
+      .contactsect textarea,
+      .contactsect button {
+        padding: 5px;
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -262,36 +331,36 @@
     </section>
     <p id="proj"><a>Projects</a></p>
     <section class="projects" id="Projects">
-      <div class="border">
-      <div class="project-1">
-        <div class="uppersect">
-          <img src="travelimg.jpg" alt="Travel Diaries">
-        </div>
-        <div class="lowersect">
-          <a href="https://diksha0032.github.io/Travel_Diaries/">Travel Diaries</a>
-        </div>
-      </div>
-      </div>
-      <div class="border">
-      <div class="project-2">
-        <div class="uppersect">
-          <img src="rps.gif" alt="rps">
-        </div>
-        <div class="lowersect">
-          <a class="rpstext" href="https://diksha0032.github.io/rps_game/">Rock Paper Scissors</a>
-        </div>
+      <div class="border1">
+        <div class="project-1">
+          <div class="uppersect">
+            <img src="travelimg.jpg" alt="Travel Diaries">
+          </div>
+          <div class="lowersect">
+            <a href="https://diksha0032.github.io/Travel_Diaries/">Travel Diaries</a>
+
+          </div>
         </div>
       </div>
-      <div class="border">
-      <div class="project-3">
-        <div class="uppersect">
-          <img src="calcivid.gif" alt="calci">
-        </div>
-        <div class="lowersect">
-          <a href="https://diksha0032.github.io/calci_js/">Calculator</a>
+      <div class="border1">
+        <div class="project-2">
+          <div class="uppersect">
+            <img src="rps.gif" alt="rps">
+          </div>
+          <div class="lowersect">
+            <a class="rpstext" href="https://diksha0032.github.io/rps_game/">Rock Paper Scissors</a>
+          </div>
         </div>
       </div>
-      </div>
+      <div class="border1">
+        <div class="project-3">
+          <div class="uppersect">
+            <img src="calcivid.gif" alt="calci">
+            <div class="lowersect">
+              <a href="https://diksha0032.github.io/calci_js/">Calculator</a>
+            </div>
+          </div>
+        </div>
     </section>
     <section class="secondsect" id="Profiles">
       <div class="leftsect">
